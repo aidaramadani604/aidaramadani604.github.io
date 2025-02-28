@@ -9,7 +9,7 @@
   <body>
     <style>
         body {
-            color: #950b74; /* Warna abu-abu gelap */
+            color: #950b74; /*Warna abu-abu gelap*/
         }
       body {
             font-family: 'Poppins', sans-serif;
@@ -19,6 +19,37 @@
             text-align: justify;
             background-color: #ffb5edaa;
       }
+      .contact-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      }
+       .contact-box h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-box button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-box button:hover {
+            background: #0056b3;
+        }
     </style>
     <div class="container">
       <h1>Halo! Saya Aida Ramadani</h1>
@@ -100,8 +131,7 @@
       <a href="mailto:aidaramadani1904@mail.ugm.ac.id"
       target="_blank"
       style="color:#950b74"
-        >Email</a
-      >
+        >Email</a>
       <a
         href="https://www.linkedin.com/in/aida-ramadani-02718b256"
         target="_blank"
@@ -118,6 +148,17 @@
       style="color:#950b74"
       >Github</a>
     </section>
+
+    </div>
+    <div class="contact-box">
+        <h2>Hubungi Saya</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
 
   </body>
 </html>
